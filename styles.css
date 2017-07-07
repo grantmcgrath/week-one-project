@@ -8,6 +8,7 @@ body {
 header {
   text-align: center;
   padding: 10px 0;
+  margin: 0 10%;
 }
 
 h1 {
@@ -34,6 +35,18 @@ h4 {
   margin-bottom: 50px;
 }
 
+h5 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+blockquote {
+  font-size: 20px;
+  font-weight: 300i;
+  border-left: 2px solid black;
+  padding-left: 40px;
+}
+
 nav {
   color: #2B2F26;
   font-family: 'Roboto', sans-serif;
@@ -50,6 +63,7 @@ nav a {
 
 nav a:hover {
   color: #CD5D67;
+  transition-duration: 2s;
 }
 
 nav a:active {
@@ -60,6 +74,10 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #968772;
 }
 
 li {
@@ -76,8 +94,88 @@ img {
   object-fit: cover;
 }
 
-form {
+.content {
+  margin: 0 12%;
+}
 
+.content p {
+  line-height: 200%;
+  font-size: 18px;
+}
+
+.birdhouse {
+  float: left;
+  width: 150px;
+  padding: 0 20px 20px 0;
+}
+
+.facilities {
+  width: 75%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.shelf {
+  width: 23%;
+  float: right;
+}
+
+.shelf p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.shelf-pic {
+  width: 190px;
+  object-fit: scale-down;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 0 50px;
+  font-size: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f3eadb;
+}
+
+th {
+  border: 1px solid black;
+  padding: 20px;
+  font-weight: 400;
+}
+
+td {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: left;
+}
+
+.monthly-plans {
+  margin: 0 10%;
+  clear: both;
+}
+
+.about-img {
+  background-image: url("img/background-3.jpg");
+  /*height: 300px;*/
+  /*width: 100%;*/
+  /*object-fit: contain;*/
+  margin: 50px 0 0;
+}
+
+.inner-box {
+  text-align: center;
+  /*align-items: center;*/
+}
+
+h6 {
+  color: white;
+  font-size: 50px;
+  margin: 50px;
+  padding: 120px;
 }
 
 .container {
@@ -109,16 +207,20 @@ input {
   background-color: #FFFFFF;
   width: 100%;
   display: flex;
-  border-bottom: 5px solid #edebea;
+  /*border-bottom: 5px solid #edebea;*/
   justify-content: space-between;
+  box-shadow: 0 10px 10px #edebea;
 }
 
 #logo {
+  background-image: url("bent-creek-logo.png");
   padding: 20px 20px;
   width: 50px;
 }
 
-#logo :hover {}
+#logo:hover {
+  background-image: url("bent-creek-logo-coral.png");
+}
 
 button {
   background-color: #968772;
